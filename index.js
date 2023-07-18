@@ -1,5 +1,7 @@
 const server = require("./api/server");
 
-server.listen(9000, ()=> {
-    console.log("Server running on port 9000")
+const port = process.env.PORT || 9000
+
+server.listen(port, ()=> {
+    console.log(`Server running on port ${port}`)
 })
